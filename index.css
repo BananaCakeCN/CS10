@@ -1,8 +1,41 @@
 #top{
-    position: fixed;
+	position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 50%;
-    color: #ddd;
+    height: 80px;
+    background-color: #82c0e4;
+    box-shadow: 0 0 8px 2px #82c0e4;
+	transition: all ease 0.3s;
+	cursor: pointer;
+}
+#top:hover{
+	height: 110px;
+}
+#top:hover ~ #content{
+	margin-top: 130px;
+}
+body{
+	font-family: Segoe UI, SegoeUI, Arial, sans-serif;
+	margin: 0;
+}
+#bottom{
+	height: 200px;
+	width: 100%;
+	background-color: #888;
+}
+#content{
+	margin-top: 100px;
+	transition: all ease 0.3s;
+	width: calc(100% - 40px);
+	padding: 0 20px;
+}
+#list{
+	height: 400px;
+	width: 100%;
+	overflow-x: scroll;
+	background-color: #ddd;
+	border-radius: 8px;
+	margin-bottom: 20px;
+    scrollbar-width: none;
 }
