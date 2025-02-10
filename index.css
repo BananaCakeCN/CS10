@@ -8,16 +8,21 @@
     box-shadow: 0 0 8px 2px #82c0e4;
 	transition: all ease 0.3s;
 	cursor: pointer;
+    overflow: hidden;
 }
 #top:hover{
-	height: 110px;
+	height: 120px;
 }
 #top:hover ~ #content{
-	margin-top: 130px;
+	margin-top: 140px;
+}
+#top:hover > .topbtn{
+	opacity: 1;
 }
 body{
 	font-family: Segoe UI, SegoeUI, Arial, sans-serif;
 	margin: 0;
+    color: #222;
 }
 #bottom{
 	height: 200px;
@@ -34,8 +39,38 @@ body{
 	height: 400px;
 	width: 100%;
 	overflow-x: scroll;
-	background-color: #ddd;
-	border-radius: 8px;
+    overflow-y: hidden;
+	background-color: #eee;
+	border-radius: 10px;
 	margin-bottom: 20px;
     scrollbar-width: none;
+    box-shadow: inset 0 0 2px 2px #ccc;
+}
+.item{
+    width: 300px;
+    display: inline-block;
+    height: calc(100% - 40px);
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 5px;
+}
+.topbtn{
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-left: 40px;
+    display: inline;
+    border: 1px solid #b2d1e2;
+    color: #ebf1f4;
+    opacity: 0;
+    transition: all 0.3s ease 0.3s;
+}
+.topbtn:hover{
+    transition: all 0.3s ease;
+    box-shadow: inset 0 0 2px 2px #82c0e4;
+    border: 1px solid #82c0e4;
+    background-color: #fff;
+    color: #222;
+}
+.topbtn:active{
+    outline: 2px dashed #fff;
 }
