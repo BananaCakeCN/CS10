@@ -9,6 +9,7 @@
 	transition: all ease 0.3s;
 	cursor: pointer;
     overflow: hidden;
+    z-index: 401;
 }
 #top:hover{
 	height: 120px;
@@ -117,11 +118,9 @@ body{
 }
 #map {
     height: 600px;
-    z-index: -1;
 }
 #map1 {
     height: 600px;
-    z-index: -1;
 }
 #bottom a{
 	color: #fff;
