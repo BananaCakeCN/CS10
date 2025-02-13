@@ -25,9 +25,10 @@ body{
     color: #222;
 }
 #bottom{
-	height: 200px;
-	width: 100%;
+	width: calc(100% - 40px);
 	background-color: #888;
+	color: #fff;
+	padding: 20px;
 }
 #content{
 	margin-top: 100px;
@@ -115,5 +116,17 @@ body{
     text-align: center;
 }
 #map {
-    height: 490px;
+    height: 600px;
+    z-index: -1;
+}
+#map1 {
+    height: 600px;
+    z-index: -1;
+}
+a{
+	color: #fff;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
 }
